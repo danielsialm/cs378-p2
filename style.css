@@ -31,8 +31,8 @@
 }
 
 .text {
-font-size: 5.0vw;
-font-family:'Courier New', Courier, monospace;
+  font-size: 5.0vw;
+  font-family:'Courier New', Courier, monospace;
 }
 
 .text-price {
@@ -41,27 +41,28 @@ font-family:'Courier New', Courier, monospace;
 }
 
 .text-quantity {
-text-align: center;
+  text-align: center;
 }
 
 .button {
   background-color: rgb(241, 241, 255);
-  font-size: 4.0vw;
   text-align: center;
   border: 2px solid black;
-  border-radius: 15px;
   width: fit-content;
 }
 
 .button-checkout {
-  margin-left: 2.0vw
+  border-radius: 15px;
+  font-size: 3.5vw;
+  margin: 0.0px;
 }
 
 .button-quantity {
-border-radius: 50%;
-padding: 0px 20px
+  border-radius: 50%;
+  font-size: 4.0vw;
+  padding: 0.0vw 1.5vw;
 }
 
 #item_card {
-padding: 3vw;
+  padding: 3vw;
 }
