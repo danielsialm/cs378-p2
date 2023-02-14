@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <!-- Implement from below -->
+  <body>
+    <header>
+        <img src="https://www.oscampuscafe.com/wp-content/uploads/2019/11/os-campus-cafe-logo-2x.png" alt="O's Campus Cafe" class="image logo"/>
+    </header>
+    <div class="container">
+      <div class="row">
+          <p class="subheading subheading1">Delicious, From-Scratch Recipes Close at Hand</p>
+          <p class="subheading subheading2">The fresh choice of UT!</p>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="row" id="item_card">
+            <div class="col-4">
+              <img src="https://bakeitwithlove.com/wp-content/uploads/2022/04/microwave-mac-and-cheese-sq.jpg" alt="Mac & Cheese" class="image food"/>
+            </div>
+            <div class="col">
+              <div class="row">
+                <div class="col-auto">
+                  <p class="text text-item">mac</p>
+                </div>
+                <div class="col">
+                  <p class="text text-price">$5</p>
+                </div>
+              </div>
+              <div class="row justify-content-end">
+                <div class="col-2">
+                  <button class="text button button-quantity" onclick="changeQuantity('mac', -1)">-</button>
+                </div>
+                <div class="col-4">
+                  <p class="text text-quantity" id="mac">0</p>
+                </div>
+                <div class="col-2">
+                  <button class="text button button-quantity" onclick="changeQuantity('mac', 1)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="item_card">
+            <div class="col-4">
+              <img src="https://www.budgetbytes.com/wp-content/uploads/2013/07/Creamy-Tomato-Spinach-Pasta-V2-bowl.jpg" alt="Pasta" class="image food"/>
+            </div>
+            <div class="col">
+              <div class="row">
+                <div class="col-auto">
+                  <p class="text text-item">pasta</p>
+                </div>
+                <div class="col">
+                  <p class="text text-price">$8</p>
+                </div>
+              </div>
+              <div class="row justify-content-end">
+                <div class="col-2">
+                  <button class="text button button-quantity" onclick="changeQuantity('pasta', -1)">-</button>
+                </div>
+                <div class="col-4">
+                  <p class="text text-quantity" id="pasta">0</p>
+                </div>
+                <div class="col-2">
+                  <button class="text button button-quantity" onclick="changeQuantity('pasta', 1)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="item_card">
+            <div class="col-4">
+              <img src="https://www.eatingonadime.com/wp-content/uploads/2020/10/carne-asada-1-square.jpg.webp" alt="Tacos" class="image food"/>
+            </div>
+            <div class="col">
+              <div class="row">
+                <div class="col-auto">
+                  <p class="text text-item">tacos</p>
+                </div>
+                <div class="col">
+                  <p class="text text-price">$8</p>
+                </div>
+              </div>
+              <div class="row justify-content-end">
+                <div class="col-2">
+                  <button class="text button button-quantity" onclick="changeQuantity('tacos', -1)">-</button>
+                </div>
+                <div class="col-4">
+                  <p class="text text-quantity" id="tacos">0</p>
+                </div>
+                <div class="col-2">
+                  <button class="text button button-quantity" onclick="changeQuantity('tacos', 1)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="item_card">
+            <div class="col-4">
+              <img src="https://www.cook2eatwell.com/wp-content/uploads/2018/12/chicken-enchiladas-image-2.jpg" alt="Enchilada" class="image food"/>
+            </div>
+            <div class="col">
+              <div class="row">
+                <div class="col-auto">
+                  <p class="text text-item">enchiladas</p>
+                </div>
+                <div class="col">
+                  <p class="text text-price">$10</p>
+                </div>
+              </div>
+              <div class="row justify-content-end">
+                <div class="col-2">
+                  <button class="text button button-quantity" onclick="changeQuantity('enchiladas', -1)">-</button>
+                </div>
+                <div class="col-4">
+                  <p class="text text-quantity" id="enchiladas">0</p>
+                </div>
+                <div class="col-2">
+                  <button class="text button button-quantity" onclick="changeQuantity('enchiladas', 1)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row", id="checkout">
+            <div class="col-6">
+              <p class="text text-checkout" id="subtotal">Subtotal $0</p>
+            </div>
+            <div class="col-auto">
+              <button class="text button button-checkout" onclick="order()">Order</button>
+            </div>
+            <div class="col-auto">
+              <button class="text button button-checkout" onclick="clearAll()">Clear all</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
